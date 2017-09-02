@@ -1,0 +1,126 @@
+.header {
+    height:90px;
+    background:$n-blue4;
+    position:relative;
+    border-bottom: 20px solid $n-blue5;
+
+    @mixin atMedium {
+        height:100px;
+    }
+
+
+    &__logo {
+
+        position:absolute;
+        z-index:6;
+        top:25px;
+        left:15px;
+
+        @mixin atMedium {
+            left:40px;
+        }
+
+        &__box-large {
+            width:47px;
+            height:47px;
+            background:black;
+            position:absolute;
+            border-radius:2px;
+
+            top:5px;
+            left:-5px;
+            z-index:2;
+
+            @mixin atMedium {
+                width:50px;
+                height:45px;
+            }
+        }
+        &__box-medium {
+            width:30px;
+            height:25px;
+            background:#666;
+            position:absolute;
+            border-radius: 2px;
+
+            z-index:3;
+            top:30px;
+            left:20px;
+
+            @mixin atMedium {
+                top:30px;
+                left:25px;
+                width:30px;
+                height:25px;
+            }
+        }
+
+        &__box-small {
+            height:15px;
+            width:20px;
+            background:white;
+
+            border-radius: 2px;
+            position:absolute;
+            top: 43px;
+            left:40px;
+            z-index:4;
+
+            @mixin atMedium {
+              top: 45px;
+              left:45px;
+            }
+
+        }
+
+        &__circle {
+            height:80px;
+            width:80px;
+            position:absolute;
+            top:0px;
+            border:3px solid white;
+            border-radius:50%;
+            background: $n-blue3;
+            left:0;
+
+            @mixin atMedium {
+                height:100px;
+                width:100px;
+            }
+        }
+    }
+
+    &__box {
+        display:inline-block;
+        margin:25px 0 0 120px;
+
+        @mixin atMedium {
+            margin:25px 0 0 160px;
+        }
+
+        @mixin atLarge {
+            margin:20px 0 0 170px;
+        }
+
+        &__title {
+            margin:0px 0 0 -15px;
+            color:white;
+            font-size:27px;
+            font-weight: 300;
+
+            @mixin atMedium {
+                font-size:30px;
+            }
+            @mixin atLarge {
+                margin:5px 0 0 0;
+                font-size:38px;
+
+            }
+        }
+
+    }
+
+
+
+
+}

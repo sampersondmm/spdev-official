@@ -1,0 +1,159 @@
+.nav {
+    text-align: center;
+    display:none;
+    position:absolute;
+    background: white;
+    z-index:2;
+    right:0;
+
+
+    @mixin atLarge {
+        display:block;
+    }
+
+        &__ul {
+            display:inline-block;
+            float:right;
+            height:35px;
+            margin-top: -10px;
+            background:white;
+            width:800px;
+
+
+        &__li {
+            list-style: none;
+            padding:2px;
+            float:left;
+            display:block;
+
+
+        }
+
+        &__a {
+            display:inline-block;
+            padding:3px 20px;
+            padding-left:15px;
+            padding-right:70px;
+            margin-top:4px;
+            position:relative;
+            background:white;
+            border-right:1px solid $n-grey1;
+            font-weight:300;
+            text-decoration: none;
+            z-index:2;
+            color:black;
+
+
+            &:hover {
+              font-weight:500;
+              padding-left:13.5px;
+
+            }
+        }
+
+
+
+    }
+
+    &__menu-x-1 {
+      height:20px;
+      width:20px;
+      position:absolute;
+
+      top:-2px;
+      left:295px;
+      z-index:2;
+      transition-delay: 5s;
+      transition: all .7s ease-out;
+
+      &-v {
+        width:1px;
+        height:100%;
+        background:black;
+        position:absolute;
+        left:9px;
+      }
+      &-h {
+        width:100%;
+        height:1px;
+        background:black;
+        position:absolute;
+        top:9px;
+      }
+
+
+      &--is-visible {
+        right:20px;
+      }
+
+      &--rotate {
+        transform: rotate(135deg);
+      }
+    }
+
+    &__menu-x-2 {
+      height:20px;
+      width:20px;
+      position:absolute;
+      top:-2px;
+      left:455px;
+      z-index:2;
+      transition: all .8s ease-out;
+
+
+      &-v {
+        width:1px;
+        height:100%;
+        background:black;
+        position:absolute;
+        left:9px;
+      }
+      &-h {
+        width:100%;
+        height:1px;
+        background:black;
+        position:absolute;
+        top:9px;
+      }
+
+      &--is-visible {
+        right:20px;
+      }
+      &--rotate {
+        transform: rotate(135deg);
+      }
+    }
+
+    &__menu-x-3 {
+      height:20px;
+      width:20px;
+      position:absolute;
+      top:-2px;
+      left:600px;
+      z-index:2;
+      transition: all .9s ease-out;
+
+      &-v {
+        width:1px;
+        height:100%;
+        background:black;
+        position:absolute;
+        left:9px;
+      }
+      &-h {
+        width:100%;
+        height:1px;
+        background:black;
+        position:absolute;
+        top:9px;
+      }
+
+      &--is-visible {
+        right:20px;
+      }
+      &--rotate {
+        transform: rotate(135deg);
+      }
+    }
+
+}

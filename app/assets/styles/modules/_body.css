@@ -1,0 +1,480 @@
+.body {
+
+    width:100%;
+    text-align:center;
+    min-height:500px;
+    position: relative;
+
+    &-screen {
+      position: absolute;
+      z-index: 3;
+      top:0;
+      left:0;
+      width:0;
+      height:0;
+      background:rgba(0,0,0,0);
+      transition:background .6s ease-out;
+
+
+
+      &--active {
+        background:rgba(0,0,0,.6);
+        height:100%;
+        width:100%;
+      }
+    }
+
+
+
+
+    &__bar {
+      height:50px;
+      width:100%;
+      background: black;
+    }
+
+    &__contact-new {
+        border-bottom:3px solid $A-blue1;
+        padding-top:50px;
+        position:relative;
+        height:50px;
+        background: $A-grey3;
+
+        &__box1 {
+          position:absolute;
+          bottom:-30px;
+          left:10px;
+          height:30px;
+          width:100px;
+          background:$A-grey3;
+          border-bottom:3px solid $A-blue1;
+          border-right:3px solid $A-blue1;
+          border-left:3px solid $A-blue1;
+
+          @mixin atLarge {
+            bottom:-40px;
+            left:10px;
+            height:40px;
+            width:150px;
+          }
+        }
+
+        &__box2 {
+          position:absolute;
+          bottom:-67px;
+          left:20px;
+          height:40px;
+          width:20px;
+          background:$A-grey3;
+          border-bottom:3px solid $A-blue1;
+          border-right:3px solid $A-blue1;
+          border-left:3px solid $A-blue1;
+
+          @mixin atLarge {
+            bottom:-97px;
+            left:20px;
+            height:60px;
+            width:40px;
+          }
+        }
+
+
+      &__box3 {
+        position:absolute;
+        bottom:5px;
+        right:60px;
+        height:30px;
+        width:40px;
+        background:white;
+        border:3px solid $A-blue1;
+        display: none;
+
+        @mixin atMedium {
+          display: block;
+        }
+
+        @mixin atLarge {
+          bottom:5px;
+          right:60px;
+          height:30px;
+          width:40px;
+        }
+      }
+
+    &__box4 {
+      position:absolute;
+      bottom:-3px;
+      right:30px;
+      height:30px;
+      width:20px;
+      background:white;
+      border:3px solid $A-blue1;
+      border-bottom:none;
+
+    @mixin atLarge {
+      bottom:-3px;
+      right:30px;
+      height:30px;
+      width:20px;
+    }
+  }
+
+        @mixin atLarge {
+
+        }
+      }
+
+    &__contact {
+        border-bottom:3px solid $A-blue1;
+        padding-top:0;
+        position:relative;
+        height:350px;
+        background: $A-grey3;
+
+        @mixin atMedium {
+          padding-top:20px;
+        }
+
+        @mixin atLarge {
+          padding-top:40px;
+        }
+
+        &__text {
+          border:1px solid black;
+          display: inline-block;
+          background:#222;
+          padding:30px;
+
+
+          input[type=text] {
+            height:40px;
+            width:300px;
+
+            @mixin atMedium {
+              width:400px;
+            }
+
+          }
+
+          &__h1 {
+            color:white;
+            font-size:30px;
+
+            &-button {
+              display:inline-block;
+
+              &-a {
+                color:black;
+                border-radius: 3px;
+                text-transform:uppercase;
+                background:#ce6000;
+                padding:7px 10px;
+                font-size:22px;
+
+              }
+            }
+          }
+
+          &__p {
+            color:white;
+          }
+
+        }
+
+        &__box1 {
+          position:absolute;
+          bottom:-30px;
+          left:10px;
+          height:30px;
+          width:100px;
+          background:$A-grey3;
+          border-bottom:3px solid $A-blue1;
+          border-right:3px solid $A-blue1;
+          border-left:3px solid $A-blue1;
+
+          @mixin atLarge {
+            bottom:-40px;
+            left:10px;
+            height:40px;
+            width:150px;
+          }
+        }
+
+        &__box2 {
+          position:absolute;
+          bottom:-67px;
+          left:20px;
+          height:40px;
+          width:20px;
+          background:$A-grey3;
+          border-bottom:3px solid $A-blue1;
+          border-right:3px solid $A-blue1;
+          border-left:3px solid $A-blue1;
+
+          @mixin atLarge {
+            bottom:-97px;
+            left:20px;
+            height:60px;
+            width:40px;
+          }
+        }
+
+
+      &__box3 {
+        position:absolute;
+        bottom:5px;
+        right:60px;
+        height:30px;
+        width:40px;
+        background:white;
+        border:3px solid $A-blue1;
+        display: none;
+
+        @mixin atMedium {
+          display: block;
+        }
+
+        @mixin atLarge {
+          bottom:5px;
+          right:60px;
+          height:30px;
+          width:40px;
+        }
+      }
+
+    &__box4 {
+      position:absolute;
+      bottom:-3px;
+      right:30px;
+      height:30px;
+      width:20px;
+      background:white;
+      border:3px solid $A-blue1;
+      border-bottom:none;
+
+    @mixin atLarge {
+      bottom:-3px;
+      right:30px;
+      height:30px;
+      width:20px;
+    }
+  }
+}
+
+    &__box-top {
+        padding:50px 20px 50px 20px;
+
+        @mixin atLarge {
+            padding:50px;
+        }
+    }
+
+    &__box-bottom {
+        text-align:center;
+
+        &__box-1 {
+            width:100%;
+            margin-bottom:30px;
+            background:$A-blue2;
+            border-bottom:3px solid $A-blue1;
+            display:inline-block;
+            height:250px;
+            position:relative;
+            min-width:300px;
+            padding:50px 20px 50px 20px;
+
+
+            @mixin atMedium {
+                width:40%;
+                height:200px;
+                margin:0 30px 30px 0;
+
+            }
+
+            @mixin atLarge {
+                width:30%;
+                height:250px;
+                margin:0 30px 30px 30px;
+            }
+
+            &__h1 {
+                z-index:2;
+                display:block;
+                color:$A-grey3;
+                position:relative;
+            }
+
+            &__screen {
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:1;
+                background:black;
+                opacity:.6;
+            }
+
+            & img {
+                height:100%;
+                width:100%;
+                position:absolute;
+                top:0;
+                left:0;
+            }
+
+        }
+
+
+        &__box-2 {
+            width:100%;
+            background:$A-blue2;
+            margin-bottom:30px;
+            border-bottom:3px solid $A-blue1;
+            position:relative;
+            padding:50px 20px 50px 20px;
+            min-width:300px;
+            display:inline-block;
+            height:250px;
+
+            @mixin atMedium {
+                width:40%;
+                height:200px;
+                margin:0 30px 30px 0;
+            }
+
+            @mixin atLarge {
+                width:30%;
+                height:250px;
+                margin:0 30px 30px 0;
+            }
+
+           &__h1 {
+                z-index:2;
+                display:block;
+                color:$A-grey3;
+                position:relative;
+            }
+
+            &__screen {
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:1;
+                background:black;
+                opacity:.6;
+            }
+
+            & img {
+                height:100%;
+                width:100%;
+                position:absolute;
+                top:0;
+                left:0;
+            }
+        }
+
+
+        &__box-3 {
+            width:100%;
+            display:inline-block;
+            border-bottom:3px solid $A-blue1;
+            padding:50px 20px 50px 20px;
+            position:relative;
+            min-width:300px;
+            height:250px;
+
+            @mixin atMedium {
+                width:40%;
+                height:200px;
+                margin:0 30px 0px 0;
+
+            }
+
+            @mixin atLarge {
+                width:30%;
+                height:250px;
+                margin:0 auto;
+            }
+
+            &__h1 {
+                z-index:2;
+                display:block;
+                color:$A-grey3;
+                position:relative;
+            }
+
+            &__screen {
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:1;
+                background:black;
+                opacity:.6;
+            }
+
+            & img {
+                height:100%;
+                width:100%;
+                position:absolute;
+                top:0;
+                left:0;
+            }
+
+        }
+
+    }
+
+
+
+/*------PRESETS------*/
+ .cent {
+        text-align:center;
+    }
+
+    .no-cent {
+        text-align:left;
+    }
+
+    .p {
+        line-height:20px;
+
+        @mixin atMedium {
+            line-height:25px;
+        }
+
+        @mixin atLarge {
+            line-height: 30px;
+
+        }
+
+    }
+
+
+
+    .h1 {
+        font-size:27px;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        @mixin atMedium {
+            font-size:35px;
+        }
+    }
+
+    .h2 {
+        font-size:20px;
+        font-weight:300;
+        text-transform: uppercase;
+
+        @mixin atMedium {
+            font-size:28px;
+        }
+    }
+
+
+}
