@@ -1,0 +1,13 @@
+.body-resume {
+  height:1000px;
+  text-align: center;
+
+  &__resume {
+    postion:relative;
+    width:600px;
+    height:800px;
+    border:1px solid black;
+    margin:50px auto;
+    padding:20px;
+  }
+}

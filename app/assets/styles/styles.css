@@ -6,6 +6,7 @@
 @import "modules/_mobile-menu";
 @import "modules/_nav";
 @import "modules/_body";
-@import "modules/_body-port";
-@import "modules/_body-resume";
+@import "modules/portfolio/_body-port";
+@import "modules/resume/_body-resume";
 @import "modules/_footer";
+@import "modules/_reveal-item";

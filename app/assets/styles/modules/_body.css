@@ -17,6 +17,8 @@
 
 
 
+
+
       &--active {
         background:rgba(0,0,0,.6);
         height:100%;
@@ -31,6 +33,17 @@
       height:50px;
       width:100%;
       background: black;
+    }
+
+    &__resume {
+      height:700px;
+      width:600px;
+      background:white;
+      border:1px solid black;
+      margin-left:10%;
+      margin-top:50px;
+      margin-bottom:50px;
+      padding: 20px;
     }
 
     &__contact-new {
@@ -78,8 +91,7 @@
           }
         }
 
-
-      &__box3 {
+        &__box3 {
         position:absolute;
         bottom:5px;
         right:60px;
@@ -101,28 +113,25 @@
         }
       }
 
-    &__box4 {
-      position:absolute;
-      bottom:-3px;
-      right:30px;
-      height:30px;
-      width:20px;
-      background:white;
-      border:3px solid $A-blue1;
-      border-bottom:none;
-
-    @mixin atLarge {
-      bottom:-3px;
-      right:30px;
-      height:30px;
-      width:20px;
-    }
-  }
+        &__box4 {
+          position:absolute;
+          bottom:-3px;
+          right:30px;
+          height:30px;
+          width:20px;
+          background:white;
+          border:3px solid $A-blue1;
+          border-bottom:none;
 
         @mixin atLarge {
-
+          bottom:-3px;
+          right:30px;
+          height:30px;
+          width:20px;
         }
       }
+
+    }
 
     &__contact {
         border-bottom:3px solid $A-blue1;
@@ -259,6 +268,8 @@
       width:20px;
     }
   }
+
+
 }
 
     &__box-top {
@@ -313,17 +324,18 @@
                 z-index:1;
                 background:black;
                 opacity:.6;
-            }
 
-            & img {
-                height:100%;
-                width:100%;
-                position:absolute;
-                top:0;
-                left:0;
-            }
+                }
 
-        }
+                & img {
+                    height:100%;
+                    width:100%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                }
+
+            }
 
 
         &__box-2 {
@@ -453,13 +465,16 @@
         }
 
     }
+    .p-small {
+      font-size:13px;
+    }
 
 
 
     .h1 {
         font-size:27px;
         font-weight: 300;
-        text-transform: uppercase;
+
 
         @mixin atMedium {
             font-size:35px;
@@ -477,4 +492,11 @@
     }
 
 
+}
+
+.icon {
+  color:yellow;
+  position:absolute;
+  top:300px;
+  left:500px;
 }

@@ -13,16 +13,18 @@ html {
 }
 
 .clearfix:after {
-    content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
     visibility: hidden;
 }
 
 a {
     text-decoration: none;
 }
+
+
 
 .clearfix {display: inline-block;}
 

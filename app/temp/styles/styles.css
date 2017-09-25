@@ -466,10 +466,10 @@ html {
 }
 
 .clearfix:after {
-    content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
     visibility: hidden;
 }
 
@@ -623,7 +623,7 @@ a {
     }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .header__box {
             margin:20px 0 0 170px
@@ -645,13 +645,17 @@ a {
         }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .header__box__title {
                 margin:5px 0 0 0;
                 font-size:38px
         }
     }
+
+.icon {
+  color:red;
+}
 
 .mobile-menu__menu-icon {
         position:absolute;
@@ -692,7 +696,7 @@ a {
     }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .mobile-menu__menu-icon {
             display:none
@@ -921,7 +925,7 @@ a {
 
 }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .nav {
         display:block
@@ -1116,13 +1120,25 @@ a {
       background: black;
     }
 
+.body__resume {
+      height:700px;
+      width:600px;
+      background:white;
+      border:1px solid black;
+      margin-left:10%;
+      margin-top:50px;
+      margin-bottom:50px;
+      padding: 20px;
+    }
+
 .body__contact-new {
         border-bottom:3px solid rgb(40,40,50);
         padding-top:50px;
         position:relative;
         height:50px;
         background: rgb(195,195,195);
-      }
+
+    }
 
 .body__contact-new__box1 {
           position:absolute;
@@ -1136,7 +1152,7 @@ a {
           border-left:3px solid rgb(40,40,50);
         }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__contact-new__box1 {
             bottom:-40px;
@@ -1158,7 +1174,7 @@ a {
           border-left:3px solid rgb(40,40,50);
         }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__contact-new__box2 {
             bottom:-97px;
@@ -1186,7 +1202,7 @@ a {
       }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__contact-new__box3 {
           bottom:5px;
@@ -1197,27 +1213,24 @@ a {
     }
 
 .body__contact-new__box4 {
-      position:absolute;
-      bottom:-3px;
-      right:30px;
-      height:30px;
-      width:20px;
-      background:white;
-      border:3px solid rgb(40,40,50);
-      border-bottom:none;
-  }
+          position:absolute;
+          bottom:-3px;
+          right:30px;
+          height:30px;
+          width:20px;
+          background:white;
+          border:3px solid rgb(40,40,50);
+          border-bottom:none;
+      }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__contact-new__box4 {
-      bottom:-3px;
-      right:30px;
-      height:30px;
-      width:20px
-  }
-    }
-
-@media (min-width:790px) {
+          bottom:-3px;
+          right:30px;
+          height:30px;
+          width:20px
+      }
     }
 
 .body__contact {
@@ -1226,19 +1239,25 @@ a {
         position:relative;
         height:350px;
         background: rgb(195,195,195);
+
+
 }
 
 @media (min-width:500px) {
 
 .body__contact {
           padding-top:20px
+
+
 }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__contact {
           padding-top:40px
+
+
 }
     }
 
@@ -1299,7 +1318,7 @@ a {
           border-left:3px solid rgb(40,40,50);
         }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__contact__box1 {
             bottom:-40px;
@@ -1321,7 +1340,7 @@ a {
           border-left:3px solid rgb(40,40,50);
         }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__contact__box2 {
             bottom:-97px;
@@ -1349,7 +1368,7 @@ a {
       }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__contact__box3 {
           bottom:5px;
@@ -1370,7 +1389,7 @@ a {
       border-bottom:none;
   }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__contact__box4 {
       bottom:-3px;
@@ -1384,7 +1403,7 @@ a {
         padding:50px 20px 50px 20px;
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__box-top {
             padding:50px
@@ -1407,7 +1426,7 @@ a {
             min-width:300px;
             padding:50px 20px 50px 20px;
 
-        }
+            }
 
 @media (min-width:500px) {
 
@@ -1416,17 +1435,17 @@ a {
                 height:200px;
                 margin:0 30px 30px 0
 
-        }
+            }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__box-bottom__box-1 {
                 width:30%;
                 height:250px;
                 margin:0 30px 30px 30px
 
-        }
+            }
     }
 
 .body__box-bottom__box-1__h1 {
@@ -1445,15 +1464,16 @@ a {
                 z-index:1;
                 background:black;
                 opacity:.6;
-            }
+
+                }
 
 .body__box-bottom__box-1 img {
-                height:100%;
-                width:100%;
-                position:absolute;
-                top:0;
-                left:0;
-            }
+                    height:100%;
+                    width:100%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                }
 
 .body__box-bottom__box-2 {
             width:100%;
@@ -1476,7 +1496,7 @@ a {
         }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__box-bottom__box-2 {
                 width:30%;
@@ -1532,7 +1552,7 @@ a {
         }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body__box-bottom__box-3 {
                 width:30%;
@@ -1591,7 +1611,7 @@ a {
     }
     }
 
-@media (min-width:790px) {
+@media (min-width:800px) {
 
 .body .p {
             line-height: 30px
@@ -1599,10 +1619,13 @@ a {
     }
     }
 
+.body .p-small {
+      font-size:13px;
+    }
+
 .body .h1 {
         font-size:27px;
         font-weight: 300;
-        text-transform: uppercase;
     }
 
 @media (min-width:500px) {
@@ -1625,18 +1648,49 @@ a {
     }
     }
 
+.icon {
+  color:yellow;
+  position:absolute;
+  top:300px;
+  left:500px;
+}
+
 .body-port {
     height:500px;
 }
 
 .body-resume {
-  height:400px;
-  width:300px;
-  border:1px solid black;
-  background:yellow;
+  height:1000px;
+  text-align: center;
 }
+
+.body-resume__resume {
+    postion:relative;
+    width:600px;
+    height:800px;
+    border:1px solid black;
+    margin:50px auto;
+    padding:20px;
+  }
 
 .footer {
     height:100px;
     background:rgb(40,40,50);
+
+
+
 }
+
+.reveal {
+  opacity: 0;
+  -webkit-transition: all 1.2s ease-out;
+  transition: all 1.2s ease-out;
+  -webkit-transform:scale(1.10);
+          transform:scale(1.10);
+}
+
+.reveal--is-visible {
+    opacity:1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }

@@ -5,7 +5,8 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "normalize": "^0.3.1",
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^7.0.0",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
@@ -22,5 +23,20 @@
     "postcss-nested": "^2.0.2",
     "postcss-simple-vars": "^4.0.0",
     "webpack": "^3.2.0"
-  }
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampersondmm/spdev-official.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sampersondmm/spdev-official/issues"
+  },
+  "homepage": "https://github.com/sampersondmm/spdev-official#readme",
+  "description": ""
 }
